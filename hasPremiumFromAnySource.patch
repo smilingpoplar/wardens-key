@@ -1,7 +1,18 @@
-diff -urN browser-source/libs/common/src/billing/services/account/billing-account-profile-state.service.ts browser-source-mod/libs/common/src/billing/services/account/billing-account-profile-state.service.ts
---- browser-source/libs/common/src/billing/services/account/billing-account-profile-state.service.ts	2025-07-02 21:40:16.000000000 +0800
-+++ browser-source-mod/libs/common/src/billing/services/account/billing-account-profile-state.service.ts	2025-07-04 19:50:40.657825500 +0800
-@@ -38,13 +38,14 @@
+diff --git a/apps/browser/src/manifest.v3.json b/apps/browser/src/manifest.v3.json
+index 206a300236..b6c8f2f75b 100644
+--- a/apps/browser/src/manifest.v3.json
++++ b/apps/browser/src/manifest.v3.json
+@@ -1,4 +1,5 @@
+ {
++  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmqKbvreshyXRuN2gikeR1idqR6KL0Di89JZcMyD4bjJRZVmQO7aznSGSALIHzSAUGYocUYBNDOP5QAhImxXyQ1qG8+goXs93v9GzrNJETdVuCEhqBggC4/DFabryJZDiKvZ2Jl0DM7MsWdoybZPwrj70V3aJ/nVNOMkf868scNTMliwitCqqjT5baTANsG0DkZWQExD4lSXzSZHH9MEO8q0iZ7RRlNuGRBAkZgNV8FwZRsPKm/rwQ9dy3VpgLcmLp5GiMt+kAEncqKAkuRYnhVXXBsKqIyYTMjHSLkLnpfFySyOPLBdS617i/PGNiP/MT6Xy6z//v5NozUgaAZ4gJQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "102.0",
+   "name": "__MSG_extName__",
+diff --git a/libs/common/src/billing/services/account/billing-account-profile-state.service.ts b/libs/common/src/billing/services/account/billing-account-profile-state.service.ts
+index 654af40ffe..871dd0f497 100644
+--- a/libs/common/src/billing/services/account/billing-account-profile-state.service.ts
++++ b/libs/common/src/billing/services/account/billing-account-profile-state.service.ts
+@@ -38,13 +38,14 @@ export class DefaultBillingAccountProfileStateService implements BillingAccountP
    }
  
    hasPremiumFromAnySource$(userId: UserId): Observable<boolean> {

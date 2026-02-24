@@ -1,3 +1,9 @@
+## 本fork更新
+
+为与mac端的Bitwarden通信以使用指纹识别，生成和chromewebstore的扩展相同的ID
+
+---
+
 # Warden's Key
 
 **Warden's Key** 是基于 Bitwarden 浏览器扩展的修改版本，专门解锁 TOTP（基于时间的一次性密码）功能，让免费用户也能使用完整的 TOTP 功能。
